@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkf1dv21nj217s0nn488.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkf1meybij218a0nx7f0.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkf1tnn90j21870bqgnf.jpg">
-<meta property="og:updated_time" content="2017-09-15T10:18:54.654Z">
+<meta property="og:updated_time" content="2017-09-15T10:22:34.725Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow Object Detection教程：用深度学习框架构建自己的图像目标分类器 | tea321000的博客">
 <meta name="twitter:description" content="这个暑假非常有幸去了实习，不小心入了一下AI的坑，不过作为一个工科生这一个半月下来明显感觉到对AI相关数学公式的储备不足，大概目前作为一个学渣也只能到达Operating的阶段吧= = 不多废话了，以下将以纯应用的角度讲解如何使用Google的深度学习框架TensorFlow中官方自己写的一个model：TensorFlow Object Detection来进行图像中目标的检测和分类，效果如下：">
@@ -228,7 +228,7 @@ classes that you can use:
 </ol>
 <p>可以按以下结构进行文件整理：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">-models</div><div class="line">|-ssd_mobilenet_v1_pets.config</div><div class="line">|-data</div><div class="line"> |-train_labels.record</div><div class="line"> |-test_labels.record</div><div class="line">|-training</div><div class="line"> |-object_detection.pbtxt</div><div class="line">|-pretrain_model</div><div class="line"> |-frozen_inference_graph.pb等预训练模型文件……</div></pre></td></tr></table></figure></p>
 <p>然后修改<code>ssd_mobilenet_v1_pets.config</code>中<code>num_classes:</code>数量为1，以及将含有<code>PATH_TO_BE_CONFIGURED</code>字眼的地方五处分别改为这些文件对于config文件而言的相对路径，如<code>fine_tune_checkpoint:&quot;PATH_TO_BE_CONFIGURED/model.ckpt&quot;</code><br>改成<code>fine_tune_checkpoint:&quot;./pretrain_model/model.ckpt&quot;</code></p>
-<p>###（1）本地训练<br>在训练前，我们首先要确保：</p>
+<h3 id="（1）本地训练"><a href="#（1）本地训练" class="headerlink" title="（1）本地训练"></a>（1）本地训练</h3><p>在训练前，我们首先要确保：</p>
 <ol>
 <li>Object Detection环境已经配置好以及测试通过</li>
 <li>config文件中对预训练模型、训练及测试用的record文件、pbtxt后缀结尾的label_maps文件的路径配置正确</li>
