@@ -24,10 +24,10 @@
 <meta property="og:site_name" content="tea321000的博客">
 <meta property="og:description" content="这个暑假非常有幸去了实习，不小心入了一下AI的坑，不过作为一个工科生这一个半月下来明显感觉到对AI相关数学公式的储备不足，大概目前作为一个学渣也只能到达Operating的阶段吧= = 不多废话了，以下将以纯应用的角度讲解如何使用Google的深度学习框架TensorFlow中官方自己写的一个model：TensorFlow Object Detection来进行图像中目标的检测和分类，效果如下：">
 <meta property="og:locale" content="zh">
-<meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/No1_1_res_0.99.jpg">
-<meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/No2_3_3res_0.99.jpg">
-<meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/No3_2_2res_0.99.jpg">
-<meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/kuangtu.JPG">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjke8mty7xj20o00g0753.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkebf4qhdj20o00g0t9k.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkebq3r8bj20o00g0wfp.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkecaxuq2j20ty0mkac5.jpg">
 <meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/label.jpg">
 <meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/label2record.JPG">
 <meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/label2record2.JPG">
@@ -38,11 +38,11 @@
 <meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/google_cloud_train2.png">
 <meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/google_cloud_train3.png">
 <meta property="og:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/google_cloud_train4.png">
-<meta property="og:updated_time" content="2017-09-15T09:37:33.917Z">
+<meta property="og:updated_time" content="2017-09-15T09:54:23.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow Object Detection教程：用深度学习框架构建自己的图像目标分类器 | tea321000的博客">
 <meta name="twitter:description" content="这个暑假非常有幸去了实习，不小心入了一下AI的坑，不过作为一个工科生这一个半月下来明显感觉到对AI相关数学公式的储备不足，大概目前作为一个学渣也只能到达Operating的阶段吧= = 不多废话了，以下将以纯应用的角度讲解如何使用Google的深度学习框架TensorFlow中官方自己写的一个model：TensorFlow Object Detection来进行图像中目标的检测和分类，效果如下：">
-<meta name="twitter:image" content="https://github.com/tea321000/tea321000.github.io/tree/master/images/No1_1_res_0.99.jpg">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjke8mty7xj20o00g0753.jpg">
     
     
     
@@ -194,9 +194,9 @@ classes that you can use:
   <section id="post-content" class="article-content post">
     <p>这个暑假非常有幸去了实习，不小心入了一下AI的坑，不过作为一个工科生这一个半月下来明显感觉到对AI相关数学公式的储备不足，大概目前作为一个学渣也只能到达Operating的阶段吧= =</p>
 <p>不多废话了，以下将以纯应用的角度讲解如何使用Google的深度学习框架TensorFlow中官方自己写的一个model：TensorFlow Object Detection来进行图像中目标的检测和分类，效果如下：</p>
-<h2 id="预览效果"><a href="#预览效果" class="headerlink" title="预览效果"></a>预览效果</h2><p><img src="https://github.com/tea321000/tea321000.github.io/tree/master/images/No1_1_res_0.99.jpg" alt="第一类元件"><br><img src="https://github.com/tea321000/tea321000.github.io/tree/master/images/No2_3_3res_0.99.jpg" alt="第二类元件"><br><img src="https://github.com/tea321000/tea321000.github.io/tree/master/images/No3_2_2res_0.99.jpg" alt="第三类元件"></p>
+<h2 id="预览效果"><a href="#预览效果" class="headerlink" title="预览效果"></a>预览效果</h2><p><img src="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjke8mty7xj20o00g0753.jpg" alt="第一类元件"><br><img src="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkebf4qhdj20o00g0t9k.jpg" alt="第二类元件"><br><img src="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkebq3r8bj20o00g0wfp.jpg" alt="第三类元件"></p>
 <p>整体框图如下：</p>
-<h2 id="整体框图"><a href="#整体框图" class="headerlink" title="整体框图"></a>整体框图</h2><p><img src="https://github.com/tea321000/tea321000.github.io/tree/master/images/kuangtu.JPG" alt="整体框图"></p>
+<h2 id="整体框图"><a href="#整体框图" class="headerlink" title="整体框图"></a>整体框图</h2><p><img src="https://ws1.sinaimg.cn/large/7c1b6a7bgy1fjkecaxuq2j20ty0mkac5.jpg" alt="整体框图"></p>
 <p>下面开始阐述训练步骤：</p>
 <h2 id="具体安装及训练步骤"><a href="#具体安装及训练步骤" class="headerlink" title="具体安装及训练步骤"></a>具体安装及训练步骤</h2><h3 id="安裝Ubuntu及tensorflow"><a href="#安裝Ubuntu及tensorflow" class="headerlink" title="安裝Ubuntu及tensorflow"></a>安裝Ubuntu及tensorflow</h3><p>由于TensorFlow Object detection框架并不官方地支持Windows系统，虽然可以通过某些方法成功安装（需要手动更改环境变量来变相完成linux下的export），但爲了避免出现一些难以解决的BUG，因此还是推荐使用Ubuntu等linux发行版系统。<br>此处以Ubuntu 16.04LTS为例。在安装好Ubuntu后，先安装Python-dev包及pip包，然后我们可以选择使用pip安装方式来安装tensorflow（也可以在<a href="https://www.tensorflow.org/install/install_linux" target="_blank" rel="external">这里</a>查看使用Virtualenv虚拟环境或Docker安装等方式）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python-pip python-dev   <span class="comment"># for Python 2.7</span></div><div class="line">sudo apt-get install python3-pip python3-dev <span class="comment"># for Python 3.3及以上</span></div><div class="line"></div><div class="line"><span class="comment">#For CPU（安装CPU版）</span></div><div class="line">pip install tensorflow</div><div class="line"><span class="comment">#For GPU（安装Nvidia GPU版）</span></div><div class="line">pip install tensorflow-GPU</div></pre></td></tr></table></figure></p>
 <p>另外需要注意的是，Nvidia GPU版需要在安装TensorFlow GPU版之前需要安装Nvidia显卡驱动、cuda及cudnn来安装显卡加速计算功能。具体的显卡驱动、cuda及cudnn教程由于过于繁琐不在此赘述，参照<a href="https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/tensorflow/" target="_blank" rel="external">Nvidia的官网教程</a>即可。由于在神经网络的计算方面，显卡的效率大大高于CPU的效率，因此推荐使用GPU版本。</p>
