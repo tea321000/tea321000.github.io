@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.entityOffsets = void 0;
+exports.entityOffsets = {
+    localOrigin: Number('0x158'),
+    iTeamNum: Number('0x448'),
+    iName: Number('0x589'),
+    glowEnable: Number('0x3c8'),
+    glowThroughWall: Number('0x3d0')
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZW50aXR5T2Zmc2V0cy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9saWIvY29yZS9vZmZzZXRzL2VudGl0eU9mZnNldHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQWEsUUFBQSxhQUFhLEdBQUc7SUFDM0IsV0FBVyxFQUFFLE1BQU0sQ0FBQyxPQUFPLENBQUM7SUFDNUIsUUFBUSxFQUFFLE1BQU0sQ0FBQyxPQUFPLENBQUM7SUFDekIsS0FBSyxFQUFFLE1BQU0sQ0FBQyxPQUFPLENBQUM7SUFDdEIsVUFBVSxFQUFFLE1BQU0sQ0FBQyxPQUFPLENBQUM7SUFDM0IsZUFBZSxFQUFFLE1BQU0sQ0FBQyxPQUFPLENBQUM7Q0FDakMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBlbnRpdHlPZmZzZXRzID0ge1xyXG4gIGxvY2FsT3JpZ2luOiBOdW1iZXIoJzB4MTU4JyksXHJcbiAgaVRlYW1OdW06IE51bWJlcignMHg0NDgnKSxcclxuICBpTmFtZTogTnVtYmVyKCcweDU4OScpLFxyXG4gIGdsb3dFbmFibGU6IE51bWJlcignMHgzYzgnKSxcclxuICBnbG93VGhyb3VnaFdhbGw6IE51bWJlcignMHgzZDAnKVxyXG59O1xyXG4iXX0=

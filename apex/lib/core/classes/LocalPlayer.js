@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LocalPlayer = void 0;
+const app = require("..");
+class LocalPlayer extends app.api.Adapter {
+    constructor(address, localPlayer = new app.UInt64(0, 1000)) {
+        super(new app.api.Entity(address, [localPlayer]));
+        this.localPlayer = localPlayer;
+    }
+    get value() {
+        return this.localPlayer.value;
+    }
+}
+exports.LocalPlayer = LocalPlayer;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9jYWxQbGF5ZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvbGliL2NvcmUvY2xhc3Nlcy9Mb2NhbFBsYXllci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwQkFBMEI7QUFFMUIsTUFBYSxXQUFZLFNBQVEsR0FBRyxDQUFDLEdBQUcsQ0FBQyxPQUF1QjtJQUM5RCxZQUFZLE9BQWUsRUFDUixjQUFjLElBQUksR0FBRyxDQUFDLE1BQU0sQ0FBQyxDQUFDLEVBQUUsSUFBSSxDQUFDO1FBQ3RELEtBQUssQ0FBQyxJQUFJLEdBQUcsQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLE9BQU8sRUFBRSxDQUFDLFdBQVcsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQURqQyxnQkFBVyxHQUFYLFdBQVcsQ0FBMEI7SUFFeEQsQ0FBQztJQUVELElBQUksS0FBSztRQUNQLE9BQU8sSUFBSSxDQUFDLFdBQVcsQ0FBQyxLQUFLLENBQUM7SUFDaEMsQ0FBQztDQUNGO0FBVEQsa0NBU0MiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBhcHAgZnJvbSAnLi4nO1xyXG5cclxuZXhwb3J0IGNsYXNzIExvY2FsUGxheWVyIGV4dGVuZHMgYXBwLmFwaS5BZGFwdGVyPGFwcC5hcGkuRW50aXR5PiB7XHJcbiAgY29uc3RydWN0b3IoYWRkcmVzczogYmlnaW50LFxyXG4gICAgcHJpdmF0ZSByZWFkb25seSBsb2NhbFBsYXllciA9IG5ldyBhcHAuVUludDY0KDAsIDEwMDApKSB7XHJcbiAgICBzdXBlcihuZXcgYXBwLmFwaS5FbnRpdHkoYWRkcmVzcywgW2xvY2FsUGxheWVyXSkpO1xyXG4gIH1cclxuXHJcbiAgZ2V0IHZhbHVlKCkge1xyXG4gICAgcmV0dXJuIHRoaXMubG9jYWxQbGF5ZXIudmFsdWU7XHJcbiAgfVxyXG59XHJcbiJdfQ==

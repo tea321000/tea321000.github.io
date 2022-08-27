@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BasicAlive = void 0;
+const app = require("..");
+class BasicAlive {
+    write(stream) {
+        stream.writeUInt8(app.PacketType.BasicAlive);
+    }
+}
+exports.BasicAlive = BasicAlive;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQmFzaWNBbGl2ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9saWIvYXBpL3BhY2tldHMvQmFzaWNBbGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwQkFBMEI7QUFFMUIsTUFBYSxVQUFVO0lBQ3JCLEtBQUssQ0FBQyxNQUF3QjtRQUM1QixNQUFNLENBQUMsVUFBVSxDQUFDLEdBQUcsQ0FBQyxVQUFVLENBQUMsVUFBVSxDQUFDLENBQUM7SUFDL0MsQ0FBQztDQUNGO0FBSkQsZ0NBSUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBhcHAgZnJvbSAnLi4nO1xyXG5cclxuZXhwb3J0IGNsYXNzIEJhc2ljQWxpdmUgaW1wbGVtZW50cyBhcHAuSVBhY2tldFdyaXRlciB7XHJcbiAgd3JpdGUoc3RyZWFtOiBhcHAuQmluYXJ5V3JpdGVyKSB7XHJcbiAgICBzdHJlYW0ud3JpdGVVSW50OChhcHAuUGFja2V0VHlwZS5CYXNpY0FsaXZlKTtcclxuICB9XHJcbn1cclxuIl19
