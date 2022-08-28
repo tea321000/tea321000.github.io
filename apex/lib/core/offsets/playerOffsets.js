@@ -1,9 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.playerOffsets = void 0;
-exports.playerOffsets = {
-    lifeState: Number('0x798'),
-    viewAngles: Number('0x2580'),
-    bleedoutState: Number('0x2720')
-};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxheWVyT2Zmc2V0cy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9saWIvY29yZS9vZmZzZXRzL3BsYXllck9mZnNldHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQWEsUUFBQSxhQUFhLEdBQUc7SUFDM0IsU0FBUyxFQUFFLE1BQU0sQ0FBQyxPQUFPLENBQUM7SUFDMUIsVUFBVSxFQUFFLE1BQU0sQ0FBQyxRQUFRLENBQUM7SUFDNUIsYUFBYSxFQUFFLE1BQU0sQ0FBQyxRQUFRLENBQUM7Q0FDaEMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBwbGF5ZXJPZmZzZXRzID0ge1xyXG4gIGxpZmVTdGF0ZTogTnVtYmVyKCcweDc5OCcpLFxyXG4gIHZpZXdBbmdsZXM6IE51bWJlcignMHgyNTgwJyksXHJcbiAgYmxlZWRvdXRTdGF0ZTogTnVtYmVyKCcweDI3MjAnKVxyXG59O1xyXG4iXX0=

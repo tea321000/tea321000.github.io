@@ -1,9 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.coreOffsets = void 0;
-exports.coreOffsets = {
-    levelName: BigInt('0x1380370'),
-    clEntityList: BigInt('0x1a203b8'),
-    localPlayer: BigInt('0x1dd15e8')
-};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29yZU9mZnNldHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvbGliL2NvcmUvb2Zmc2V0cy9jb3JlT2Zmc2V0cy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBYSxRQUFBLFdBQVcsR0FBRztJQUN6QixTQUFTLEVBQUUsTUFBTSxDQUFDLFdBQVcsQ0FBQztJQUM5QixZQUFZLEVBQUUsTUFBTSxDQUFDLFdBQVcsQ0FBQztJQUNqQyxXQUFXLEVBQUUsTUFBTSxDQUFDLFdBQVcsQ0FBQztDQUNqQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IGNvcmVPZmZzZXRzID0ge1xyXG4gIGxldmVsTmFtZTogQmlnSW50KCcweDEzODAzNzAnKSxcclxuICBjbEVudGl0eUxpc3Q6IEJpZ0ludCgnMHgxYTIwM2I4JyksXHJcbiAgbG9jYWxQbGF5ZXI6IEJpZ0ludCgnMHgxZGQxNWU4JylcclxufTtcclxuIl19
